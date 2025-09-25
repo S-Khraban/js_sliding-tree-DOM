@@ -1,0 +1,2 @@
+"use strict";var tree=document.querySelector(".tree");if(!tree)throw Error('Tree root ".tree" not found');tree.querySelectorAll("li").forEach(function(e){var r=e.querySelector(":scope > ul");if(r){var t=Array.from(e.childNodes).find(function(e){return e.nodeType===Node.TEXT_NODE&&e.nodeValue.trim()});if(t){var o=document.createElement("span");o.textContent=t.nodeValue.trim(),t.replaceWith(o),o.style.cursor="pointer",o.addEventListener("click",function(){r.hidden=!r.hidden})}}});
+//# sourceMappingURL=js_sliding-tree-DOM.66380555.js.map
